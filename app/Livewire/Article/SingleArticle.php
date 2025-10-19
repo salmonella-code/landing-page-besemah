@@ -40,6 +40,6 @@ class SingleArticle extends Component
             'articleBody' => (new MarkdownRenderer())->render($this->article->content),
             'seriesEpisode' => $seriesEpisode ?? null,
         ])
-            ->layout('components.layouts.two-columns-right');
+            ->layout('layouts.guest');
     }
 }

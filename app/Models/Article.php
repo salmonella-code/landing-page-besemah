@@ -14,6 +14,10 @@ class Article extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $casts = [
+        'published_at' => 'date'
+    ];
+
     public function topics(): BelongsToMany
     {
         return $this->morphToMany(Topic::class, 'topicable');

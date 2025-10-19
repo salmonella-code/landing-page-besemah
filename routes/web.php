@@ -1,9 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Livewire\Geografis;
+use App\Livewire\Sejarah;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', \App\Livewire\HomePage::class)->name('home-page');
+Route::get('geografis', Geografis::class);
+Route::get('sejarah', Sejarah::class);
 
 Route::get('articles', \App\Livewire\Article\ListArticle::class)->name('article.list');
 Route::get('articles/{article:slug}', \App\Livewire\Article\SingleArticle::class)->name('article.single');

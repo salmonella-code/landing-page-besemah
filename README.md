@@ -1,4 +1,4 @@
-# Bacaan Developer Platform
+# Web Blog
 
 Platform menulis dengan backend dibuat dari Filament dan Frontend Livewire.
 
